@@ -2,31 +2,38 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Max Humberstone Design</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="./dist/css/animsition.min.css">
+    <link href="./dist/css/hamburgers.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="nav-menu">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-between">
-          <a href="index.html">
-            <div class="logo">
+          <div class="logo">
+            <a href="index.html">
               <img src="./img/mh.png" alt="">
-            </div>
-          </a>
-          <div class="links justify-content-end">
-            <ul>
-              <li><a href="index.html" class="animsition-link">Work</a></li>
-              <li><a href="#" class="animsition-link">About</a></li>
-              <li><a href="#" class="animsition-link">Contact</a></li>
-            </ul>
+            </a>
           </div>
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
       </div>
+    </div>
+    <div class="overlay-menu">
+      <ul>
+        <li><a href="index.html" class="animsition-link">Work</a></li>
+        <li><a href="#" class="animsition-link">About</a></li>
+        <li><a href="#" class="animsition-link">Contact</a></li>
+      </ul>
     </div>
 
     <div class="animsition">
@@ -34,39 +41,103 @@
       <div class="home page">
         <div class="container">
           <div class="row">
-            <div class="col-sm-10 offset-sm-1 wrapper">
-              <div class="intro-content">
-                <h2>a digital product designer practicing in <span class="black">user experience design</span>, <span class="black">visual design</span> and <span class="black">front-end development</span>.</h2>
-                <hr>
-                <h4>The creative blend of design and technology to craft beautiful ideas, products and services.</h4>
-              </div>
+            <div class="col-md-12 intro-content">
+              <h1>a digital product designer practicing in <span class="black">user experience design</span>, <span class="black">visual design</span> and <span class="black">front-end development</span>.</h1>
+              <hr>
+              <!-- <h4>The creative blend of design and technology to craft beautiful ideas, products and services.</h4> -->
             </div>
           </div>
         </div>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
-            <div class="col-md-4 col-sm-6 projects">
-              <a href="project.html" class="animsition-link">
-                <div class="project-tile" style="background-image: url('./img/severn-trent-priority/Macbook.png');">
-                  <div class="overlay"></div>
-                  <div class="project-title">
-                    <h4>Project title</h4>
-                    <p>UX | UI</p>
+
+            <div class="col-md-12 project">
+              <a href="project.htm" class="animsition-link">
+                <div class="row">
+                  <div class="image col-sm-8 order-1" style="background-image: url('./img/dish/thumb.jpg');"></div>
+                  <div class="content col-sm-4 order-2">
+                    <div class="text">
+                      <span class="sans-serif">UX | UI</span>
+                      <h2>Bring people together through food and dining experiences.</h2>
+                      <p>Comming soon...</p>
+                    </div>
                   </div>
                 </div>
               </a>
             </div>
-            <div class="col-md-4 col-sm-6 projects">
-              <a href="project.html" class="animsition-link"><div class="project-tile" style="background-image: url('./img/project.jpg');"></div></a>
+
+            <div class="col-md-12 project pull-right">
+              <a href="project.htm" class="animsition-link">
+                <div class="row">
+                  <div class="image col-sm-8 order-2" style="background-image: url('./img/squair/thumb.jpg');"></div>
+                  <div class="content col-sm-4 order-1">
+                    <div class="text">
+                      <span class="sans-serif">Product | UX | UI</span>
+                      <h2>Encourage active lifestyles for oxygen therapy patients.</h2>
+                      <p>Comming soon...</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 projects">
-              <a href="project.html" class="animsition-link"><div class="project-tile" style="background-image: url('./img/e-track/bag-tracker-isometric.png');"></div></a>
+
+            <div class="col-md-12 project">
+              <a href="project.htm" class="animsition-link">
+                <div class="row">
+                  <div class="image col-sm-8 order-1" style="background-image: url('./img/e-track/thumb4.jpg');"></div>
+                  <div class="content col-sm-4 order-2">
+                    <div class="text">
+                      <span class="sans-serif">Product | UX | UI</span>
+                      <h2>Take off with peace of mind.</h2>
+                      <p>Comming soon...</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
+
+            <div class="col-md-12 project pull-right">
+              <a href="project.htm" class="animsition-link">
+                <div class="row">
+                  <div class="image col-sm-8 order-2" style="background-image: url('./img/severn-trent/thumb2.jpg');"></div>
+                  <div class="content col-sm-4 order-1">
+                    <div class="text">
+                      <span class="sans-serif">UX | UI</span>
+                      <h2>Encourage active lifestyles for oxygen therapy patients.</h2>
+                      <p>Comming soon...</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
 
     </div>
+
+    <footer>
+      <div class="footer-one">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="">
+              <h5>Max Humberstone Design</h5>
+              <p>London, UK</p>
+            </div>
+            <div class="contact justify-content-end">
+              <a href="mailto:maxhumberstonedesigns@gmail.com" class="email">Mail</a>
+              <a href="mailto:maxhumberstonedesigns@gmail.com" class="email">Dribbble</a>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="copywright justify-content-end">
+              <p>©2017, Max Humberstone Design. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
